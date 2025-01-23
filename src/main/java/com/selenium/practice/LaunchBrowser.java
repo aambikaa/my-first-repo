@@ -23,17 +23,17 @@ public class LaunchBrowser {
 
             // Find the search box using the name attribute
             WebElement searchBox = driver.findElement(By.name("q"));
-            Thread.sleep(2000);
+            Thread.sleep(3000);
 
             // Type "Sachin" into the search box
             searchBox.sendKeys("Sachin");
-            Thread.sleep(5000);
+            Thread.sleep(3000);
 
             // Submit the search form
             searchBox.submit();
 
             // Wait for a few seconds to see the search results
-            Thread.sleep(5000); // Note: This is for demonstration purposes only
+            Thread.sleep(3000); // Note: This is for demonstration purposes only
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
