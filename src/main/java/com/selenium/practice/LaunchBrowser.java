@@ -14,10 +14,14 @@ public class LaunchBrowser {
         // Initialize the ChromeDriver
         WebDriver driver = new ChromeDriver();
 
-        try {
-            // Navigate to Google
-            driver.get("https://www.google.com");
+         // Create an instance of CommonFunctions
+         CommonFunctions commonFunctions = new CommonFunctions();
 
+         // Call the openUrl method
+         commonFunctions.openUrl(driver, "https://www.google.com");
+
+        try {
+            
             // Maximize the browser window
             driver.manage().window().maximize();
 
